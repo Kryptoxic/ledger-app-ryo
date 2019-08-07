@@ -24,8 +24,12 @@ endif
 include $(BOLOS_SDK)/Makefile.defines
 
 #Monero /44'/128'
-APP_LOAD_PARAMS=  --path "2147483692/2147483776" --curve secp256k1 $(COMMON_LOAD_PARAMS) --appFlags 0x240
-APPNAME = "Monero"
+#APP_LOAD_PARAMS=  --path "2147483692/2147483776" --curve secp256k1 $(COMMON_LOAD_PARAMS) --appFlags 0x240
+#APPNAME = "Monero"
+
+#Ryo /44'/??'
+APP_LOAD_PARAMS= --path "2147483692/??" --curve secp256k1 $(COMMON_LOAD_PARAMS) --appFlags 0x240 #Need to add path
+APPNAME = "Ryo"
 
 ifeq ($(TARGET_NAME),TARGET_BLUE)
 ICONNAME = images/icon_monero_blue.gif
