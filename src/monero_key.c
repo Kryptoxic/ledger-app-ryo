@@ -243,11 +243,19 @@ int monero_apdu_get_key() {
     unsigned char seed[32];
 
     // m/44'/128'/0'/0/0
+    //path[0] = 0x8000002C;
+    //path[1] = 0x80000080;
+    //path[2] = 0x80000000;
+    //path[3] = 0x00000000;
+    //path[4] = 0x00000000;
+
+    //m/44'/??'/0'/0/0
     path[0] = 0x8000002C;
-    path[1] = 0x80000080;
+    path[1] = ??;
     path[2] = 0x80000000;
     path[3] = 0x00000000;
     path[4] = 0x00000000;
+
 
     os_perso_derive_node_bip32(CX_CURVE_SECP256K1, path, 5 , seed, G_monero_vstate.a);
     monero_io_insert(seed, 32);
