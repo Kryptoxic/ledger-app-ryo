@@ -422,7 +422,7 @@ void ui_menu_settings_display(unsigned int value) {
 #define XSTR(x) STR(x)
 
 const ux_menu_entry_t ui_menu_info[] = {
-  {NULL,  NULL,                 -1, NULL,          "Monero",                   NULL, 0, 0},
+  {NULL,  NULL,                 -1, NULL,          "Ryo",                   NULL, 0, 0},
   {NULL,  NULL,                 -1, NULL,          "(c) Ledger SAS",           NULL, 0, 0},
   {NULL,  NULL,                 -1, NULL,          "Spec  " XSTR(SPEC_VERSION),NULL, 0, 0},
   {NULL,  NULL,                 -1, NULL,          "App  " XSTR(MONERO_VERSION),  NULL, 0, 0},
@@ -509,7 +509,7 @@ void ui_menu_pubaddr_display(unsigned int value) {
 /* --------------------------------- MAIN UX --------------------------------- */
 
 const ux_menu_entry_t ui_menu_main[] = {
-  {NULL,    ui_menu_pubaddr_display,  0, NULL,              "XMR",            "", 0, 0},
+  {NULL,    ui_menu_pubaddr_display,  0, NULL,              "RYO",            "", 0, 0},
   {ui_menu_settings,           NULL,  0, NULL,              "Settings",    NULL, 0, 0},
   {ui_menu_info,               NULL,  0, NULL,              "About",       NULL, 0, 0},
   {NULL,              os_sched_exit,  0, &C_icon_dashboard, "Quit app" ,   NULL, 50, 29},
