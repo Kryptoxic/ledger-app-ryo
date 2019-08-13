@@ -63,13 +63,13 @@ void ui_info(const char* msg1, const char* msg2, const void *menu_display, unsig
 void ui_menu_amount_validation_action(unsigned int value);
 
 const ux_menu_entry_t ui_menu_fee_validation[] = {
-  {NULL,  NULL,                              1,      NULL, " Fee",     "?xmr?", 0, 0},
+  {NULL,  NULL,                              1,      NULL, " Fee",     "?RYO?", 0, 0},
   {NULL,  ui_menu_amount_validation_action,  REJECT, NULL,  "Reject",  "Fee",   0, 0},
   {NULL,  ui_menu_amount_validation_action,  ACCEPT, NULL,  "Accept",  "Fee",   0, 0},
   UX_MENU_END
 };
 const ux_menu_entry_t ui_menu_change_validation[] = {
-  {NULL,  NULL,                              1,      NULL, " Change",  "?xmr?",  0, 0},
+  {NULL,  NULL,                              1,      NULL, " Change",  "?RYO?",  0, 0},
   {NULL,  ui_menu_amount_validation_action,  REJECT, NULL,  "Reject",  "Change", 0, 0},
   {NULL,  ui_menu_amount_validation_action,  ACCEPT, NULL,  "Accept",  "Change", 0, 0},
   UX_MENU_END
@@ -159,7 +159,7 @@ void ui_menu_words_back(unsigned int value) {
 void ui_menu_validation_action(unsigned int value);
 
 const ux_menu_entry_t ui_menu_validation[] = {
-  {NULL,  NULL,                       1,      NULL, " Amount",       "?xmr?",      0, 0},
+  {NULL,  NULL,                       1,      NULL, " Amount",       "?RYO?",      0, 0},
   {NULL,  NULL,                       3,      NULL,  "Destination",  "?dest.1?",   0, 0},
   {NULL,  NULL,                       4,      NULL,  "?dest.2?",     "?dest.2?",   0, 0},
   {NULL,  NULL,                       5,      NULL,  "?dest.3?",     "?dest.3?",   0, 0},
@@ -438,7 +438,7 @@ const ux_menu_entry_t ui_menu_info[] = {
 void ui_menu_pubaddr_action(unsigned int value);
 
 const ux_menu_entry_t ui_menu_pubaddr[] = {
-  {NULL,  NULL,                  3,          NULL,  "XMR",  "?addr.1?",   0, 0},
+  {NULL,  NULL,                  3,          NULL,  "RYO",  "?addr.1?",   0, 0},
   {NULL,  NULL,                  4,          NULL,  "?addr.2?",     "?addr.2?",   0, 0},
   {NULL,  NULL,                  5,          NULL,  "?addr.3?",     "?addr.3?",   0, 0},
   {NULL,  NULL,                  6,          NULL,  "?addr.4?",     "?addr.4?",   0, 0},
